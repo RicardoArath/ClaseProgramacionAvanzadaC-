@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    try(){
+    try{
         throw 'x '; //
     }
     catch(int c){
