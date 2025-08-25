@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
             if (currentLength + (int)w.size() + (int)linepalabras.size() <= LINE_WIDTH) {
                 linepalabras.push_back(w);
                 currentLength += w.size();
-                if (debug) cout << "[DEBUG] Añadida a la linea. Longitud actual: " << currentLength << endl;
+                if (debug) cout << "[DEBUG] Aniadida a la linea. Longitud actual: " << currentLength << endl;
             } else {
                 cout << justificarTexto(linepalabras, LINE_WIDTH, false) << "\n";
                 if (debug) cout << "[DEBUG] Linea justificada e impresa." << endl;
@@ -113,14 +113,14 @@ int main(int argc, char* argv[]) {
 
         if (!linepalabras.empty()) {
             cout << justificarTexto(linepalabras, LINE_WIDTH, true) << "\n";
-            if (debug) cout << "[DEBUG] Última línea impresa (alineada izquierda)." << endl;
+            if (debug) cout << "[DEBUG] Ultima linea impresa (alineada izquierda)." << endl;
         }
 
         cin.clear(); // resetea flags (eofbit/failbit)
 
 
     } catch (const exception& e) {
-        cerr << "[EXCEPCIÓN] " << e.what() << endl;
+        cerr << "[EXCEPCION] " << e.what() << endl;
         return 1;
     }
 
