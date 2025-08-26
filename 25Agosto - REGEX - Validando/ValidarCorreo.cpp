@@ -9,11 +9,7 @@ bool tieneArroba(string correo){
     //Verifica que tenga un solo arroba
     int numArrobas = 0;
     for (size_t i = 0; i < correo.length(); i++)
-    {
-        if (correo[i] == '@') { //Si encuentra un arroba 
-            numArrobas++;
-        }
-    }
+        if (correo[i] == '@') numArrobas++; //Si encuentra un arroba
 
     if (numArrobas == 1)  return true; // Verifica que solo haya un arroba
         else return false;
