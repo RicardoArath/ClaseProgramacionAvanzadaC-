@@ -4,7 +4,7 @@
 
 int main() {
     // Expresión regular para validar un correo electrónico
-    std::regex patron_email(R"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)");
+    std::regex patron_email("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
 
     std::string email;
     std::cout << "Introduce un correo electronico: ";
