@@ -1,6 +1,5 @@
 // Programa realizado por:
-// Alumno 1: Nombre1 Matricula1
-// Alumno 2: Nombre2 Matricula2
+// Ricardo Arath Sanchez Aguirre 583928
 
 #include <iostream>
 #include <fstream>
@@ -80,7 +79,33 @@ string extraerValor(const string& linea, const string& clave, bool esNumero = fa
     return "";
 }
 
-int main() {
+bool debug = false;
+
+int main(int argc, char* argv[]) {
+    // Activar debug con argumento de línea de comandos
+    for (int i = 0; i < argc; i++)
+        if (string(argv[i]) == "--debug=on")
+            debug = true;
+
+    // Menú interactivo de debugger
+    bool go = true;
+    while (go) {
+        if (debug) {
+            cout << "[DEBUG] Debug activado" << endl;
+        } else {
+            cout << "[DEBUG] Debug desactivado" << endl;
+        }
+
+        cout << "Turn debugger [on/off/quit]: ";
+        string reply;
+        cin >> reply;
+        cin.ignore(); // limpiar buffer
+
+        if (reply == "on") debug = true;
+        if (reply == "off") debug = false;
+        if (reply == "quit") break;
+    }
+
     // Configurar consola para UTF-8
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
@@ -94,6 +119,8 @@ int main() {
     string linea;
     vector<Persona> personas;
     Persona p;
+
+    try {
 
     while (getline(archivoLeer, linea)) {
         string valor;
@@ -130,6 +157,18 @@ int main() {
         valor = extraerValor(linea, "empresa");
         if (!valor.empty() && validarEmpresa(valor)){
             p.empleo.empresa = valor;
+            if (debug) {
+                cout << "[DEBUG] Persona parcial:" << endl;
+                cout << "ID: " << p.id << endl;
+                cout << "Nombre: " << p.nombre << endl;
+                cout << "Edad: " << p.edad << endl;
+                cout << "Ciudad: " << p.ciudad << endl;
+                cout << "Email: " << p.contacto.email << endl;
+                cout << "Telefono: " << p.contacto.telefono << endl;
+                cout << "Puesto: " << p.empleo.puesto << endl;
+                cout << "Empresa: " << p.empleo.empresa << endl;
+            }
+
             personas.push_back(p);
             p = Persona();
         }
@@ -155,6 +194,12 @@ int main() {
         cout << "Puesto: " << persona.empleo.puesto << endl;
         cout << "Empresa: " << persona.empleo.empresa << endl;
         cout << "-------------------------" << endl;
+    }
+    } catch (const exception& e) {
+        cerr << "Error al procesar el archivo: " << e.what() << endl;
+        if (debug) {
+            cout << "[DEBUG] Excepcion atrapada mientras se procesaba el archivo." << endl;
+        }
     }
 
     return 0;
