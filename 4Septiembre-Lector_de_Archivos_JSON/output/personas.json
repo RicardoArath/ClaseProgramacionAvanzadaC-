@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana García",
+    "edad": 30,
+    "ciudad": "Madrid",
+    "detalles": {
+      "contacto": {
+        "email": "ana.garcia@example.com",
+        "telefono": "123-456-7890"
+      },
+      "empleo": {
+        "puesto": "Diseñadora Gráfica",
+        "empresa": "Creativa S.A."
+      }
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Luis Pérez",
+    "edad": 45,
+    "ciudad": "Barcelona",
+    "detalles": {
+      "contacto": {
+        "email": "luis.perez@example.com",
+        "telefono": "098-765-4321"
+      },
+      "empleo": {
+        "puesto": "Ingeniero de Software",
+        "empresa": "Tech Solutions"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "María López",
+    "edad": 25,
+    "ciudad": "Valencia",
+    "detalles": {
+      "contacto": {
+        "email": "maria.lopez@example.com",
+        "telefono": "111-222-3333"
+      },
+      "empleo": {
+        "puesto": "Arquitecta",
+        "empresa": "Urbanismo Total"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Carlos Sánchez",
+    "edad": 50,
+    "ciudad": "Sevilla",
+    "detalles": {
+      "contacto": {
+        "email": "carlos.sanchez@example.com",
+        "telefono": "444-555-6666"
+      },
+      "empleo": {
+        "puesto": "Profesor de Historia",
+        "empresa": "Colegio San Francisco"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Elena Rodríguez",
+    "edad": 35,
+    "ciudad": "Bilbao",
+    "detalles": {
+      "contacto": {
+        "email": "elena.rodriguez@example.com",
+        "telefono": "777-888-9999"
+      },
+      "empleo": {
+        "puesto": "Médico",
+        "empresa": "Hospital Central"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Javier Torres",
+    "edad": 28,
+    "ciudad": "Málaga",
+    "detalles": {
+      "contacto": {
+        "email": "javier.torres@example.com",
+        "telefono": "101-202-3030"
+      },
+      "empleo": {
+        "puesto": "Chef",
+        "empresa": "Restaurante El Sabor"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Sofía Morales",
+    "edad": 40,
+    "ciudad": "Zaragoza",
+    "detalles": {
+      "contacto": {
+        "email": "sofia.morales@example.com",
+        "telefono": "404-505-6060"
+      },
+      "empleo": {
+        "puesto": "Abogada",
+        "empresa": "Bufete Legal"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Pablo Jiménez",
+    "edad": 22,
+    "ciudad": "Murcia",
+    "detalles": {
+      "contacto": {
+        "email": "pablo.jimenez@example.com",
+        "telefono": "707-808-9090"
+      },
+      "empleo": {
+        "puesto": "Estudiante",
+        "empresa": "Universidad de Murcia"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Isabel Castro",
+    "edad": 55,
+    "ciudad": "Alicante",
+    "detalles": {
+      "contacto": {
+        "email": "isabel.castro@example.com",
+        "telefono": "123-987-4567"
+      },
+      "empleo": {
+        "puesto": "Jubilada",
+        "empresa": "Ninguna"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Ricardo Núñez",
+    "edad": 33,
+    "ciudad": "Granada",
+    "detalles": {
+      "contacto": {
+        "email": "ricardo.nunez@example.com",
+        "telefono": "987-654-3210"
+      },
+      "empleo": {
+        "puesto": "Desarrollador Web",
+        "empresa": "Innovate IT"
+      }
+    }
+  }
+]
