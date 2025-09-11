@@ -18,10 +18,10 @@ int main(){
         return 1;
     }
 
-    for(int i = 1; i <= numero; i++)
+    for(int i = 1; i <= numero; i++)    //i es el numero a evaluar
     {
         bool esPrimo = true;
-        for(int j = 2; j <= sqrt(i); j++)
+        for(int j = 2; j <= sqrt(i); j++)   //j es el divisor
         {   
             if(i % j == 0)
             {
