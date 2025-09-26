@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build cpp",
+            "type": "shell", 
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g3", 
+                "${file}",
+                "-lssl",
+                "-lcrypto", 
+                "-lws2_32",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
