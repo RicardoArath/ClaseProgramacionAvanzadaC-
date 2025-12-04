@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=5PwK7dJaPVg
+
+
+Para agregar los lagos al juego Snake, se implementó un sistema de obstáculos dinámicos que aparecen progresivamente durante la partida. Los lagos son bloques de 2x2 que se representan visualmente con el símbolo ~~ en color azul. El sistema genera los primeros tres lagos cada 5 segundos y posteriormente añade nuevos lagos cada 15 segundos, hasta un máximo de 10. Cada lago se posiciona aleatoriamente en el tablero, validando que no aparezca sobre la serpiente, otros lagos existentes o la comida actual. Se agregó una función de detección de colisiones que verifica si la cabeza de la serpiente toca cualquiera de las cuatro celdas que componen cada lago, terminando el juego si esto ocurre. Finalmente, se modificó la función de renderizado para dibujar todos los lagos activos en cada frame del juego.
